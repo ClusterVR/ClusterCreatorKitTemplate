@@ -18,7 +18,7 @@
 - iOS Build Support
 - Windows Build Support (Mono)
 
-### Cluster Creator Kit v1.9.0 以上
+### Cluster Creator Kit v1.10.0 以上
 プロジェクトに自動で導入されます。
 起動時にエラーが出る場合や Unity のメニューに「Cluster」の項目が追加されていない場合は [Creator Kitの導入](https://clustervr.gitbook.io/creatorkit/installation/install-creatorkit) を参考に Creator Kit の手動での導入をお試しください。
 
@@ -27,7 +27,14 @@
 ### シューター
 `Assets/ClusterCreatorKitTemplate/Shooter/Scenes/Shooter.unity`
 
-銃で的を撃って破壊できるテンプレートです。銃にはハンドガン、マシンガン、チャージガンの3種類があります。
+銃で的を撃って破壊できるテンプレートです。
+銃にはハンドガン、マシンガン、チャージガンの3種類があります。
+
+### プログレッション
+`Assets/ClusterCreatorKitTemplate/Progression/Scenes/Progression.unity`
+
+「鉱石を集めてレベルを上げて、貯まったお金で強いアビリティを買って、もっと鉱石を集める」ゲームのテンプレートです。
+プレイヤーの経験値とレベル、鉱石の所持個数、プレイヤーアビリティの効果と購入・付け外しなどを実装しています。
 
 ## ライセンス
 

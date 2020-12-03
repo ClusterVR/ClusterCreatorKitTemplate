@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5643338659592771869
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2900619574826778387, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_Name
+      value: Slot2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778389, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: key.key
+      value: RemoveAbilitySlot.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778389, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.value.sourceState.key
+      value: abilityId.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778389, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.value.sourceState.key
+      value: abilityLevel.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778389, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.targetState.key
+      value: abilityId.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778389, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[3].singleStatement.targetState.key
+      value: abilityLevel.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778390, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: key.key
+      value: ApplyAbilityIfHasEmptySlot.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778390, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778390, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[3].singleStatement.targetState.key
+      value: ApplyAbilitySlot.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778391, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: RemoveAbilitySlot.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778391, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.integerValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778392, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: ApplyAbilityIfHasEmptySlot.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778392, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.integerValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778393, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: triggers.Array.data[0].key
+      value: abilityId.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778393, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: triggers.Array.data[1].key
+      value: abilityLevel.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778396, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: key.key
+      value: ApplyAbilitySlot.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778396, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: abilityId.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900619574826778396, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.targetState.key
+      value: abilityLevel.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56a4ec617d01ce646925d3eb3f5f4384, type: 3}
