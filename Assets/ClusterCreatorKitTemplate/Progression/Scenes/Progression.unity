@@ -35459,36 +35459,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 349391470866964815, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 349391470866964815, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 349391470866964815, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 349391470866964815, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 349391470866964815, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 349391470866964815, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2804156815903180228, guid: 734d725a02c3e5341bf87d1439df51ff,
         type: 3}
       propertyPath: m_Name
@@ -35597,36 +35567,6 @@ PrefabInstance:
     - target: {fileID: 2804156815903180248, guid: 734d725a02c3e5341bf87d1439df51ff,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7009120065324934277, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7009120065324934277, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7009120065324934277, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7009120065324934277, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7009120065324934277, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7009120065324934277, guid: 734d725a02c3e5341bf87d1439df51ff,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -36130,36 +36070,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5443668143701674875, guid: 9309158b59897fb48817caf16c32a022,
-        type: 3}
-      propertyPath: triggers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443668143701674875, guid: 9309158b59897fb48817caf16c32a022,
-        type: 3}
-      propertyPath: triggers.Array.data[1].target
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443668143701674875, guid: 9309158b59897fb48817caf16c32a022,
-        type: 3}
-      propertyPath: triggers.Array.data[1].key
-      value: money
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443668143701674875, guid: 9309158b59897fb48817caf16c32a022,
-        type: 3}
-      propertyPath: triggers.Array.data[1].type
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443668143701674875, guid: 9309158b59897fb48817caf16c32a022,
-        type: 3}
-      propertyPath: triggers.Array.data[1].value.integerValue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443668143701674875, guid: 9309158b59897fb48817caf16c32a022,
-        type: 3}
-      propertyPath: triggers.Array.data[1].value.floatValue
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6187025734561500842, guid: 9309158b59897fb48817caf16c32a022,
         type: 3}
       propertyPath: m_Name

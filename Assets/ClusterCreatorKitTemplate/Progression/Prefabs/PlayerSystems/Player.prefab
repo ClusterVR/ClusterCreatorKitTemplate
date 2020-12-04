@@ -588,6 +588,14 @@ MonoBehaviour:
       boolValue: 0
       floatValue: 1
       integerValue: 1
+  - target: 2
+    specifiedTargetItem: {fileID: 0}
+    key: money
+    type: 2
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 1
 --- !u!114 &8797554064735273194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1915,7 +1923,7 @@ MonoBehaviour:
         targetState:
           target: 1
           key: capacity
-          parameterType: 2
+          parameterType: 3
         expression:
           type: 1
           value:
@@ -1963,7 +1971,7 @@ MonoBehaviour:
         targetState:
           target: 1
           key: capacity
-          parameterType: 2
+          parameterType: 3
         expression:
           type: 1
           value:
@@ -2011,7 +2019,7 @@ MonoBehaviour:
         targetState:
           target: 1
           key: capacity
-          parameterType: 2
+          parameterType: 3
         expression:
           type: 1
           value:

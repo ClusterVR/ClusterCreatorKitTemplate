@@ -249,7 +249,7 @@ MonoBehaviour:
       target: 1
       key: capacity
     item: {fileID: 0}
-  parameterType: 2
+  parameterType: 3
   format: /{0}
 --- !u!1 &2160116453130674700
 GameObject:
@@ -2081,7 +2081,7 @@ MonoBehaviour:
       target: 1
       key: capacity
     item: {fileID: 0}
-  parameterType: 2
+  parameterType: 3
   format: /{0}
 --- !u!1 &2804156815647060546
 GameObject:
