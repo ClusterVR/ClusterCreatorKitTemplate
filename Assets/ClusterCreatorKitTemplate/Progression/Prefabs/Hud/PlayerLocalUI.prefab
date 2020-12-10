@@ -260,7 +260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4034423603248336535}
-  - component: {fileID: 2624546414869342341}
+  - component: {fileID: 4813614539539118542}
   m_Layer: 5
   m_Name: AbilitySlots
   m_TagString: Untagged
@@ -289,7 +289,7 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: 0}
   m_SizeDelta: {x: 260, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2624546414869342341
+--- !u!114 &4813614539539118542
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2160116453130674700}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -307,13 +307,12 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
+  m_StartCorner: 2
+  m_StartAxis: 0
+  m_CellSize: {x: 100, y: 100}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &2804156814437579725
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 76, y: 49}
+  m_AnchoredPosition: {x: 76, y: 48.600006}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2804156814511860829
@@ -492,7 +491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6620071083561962428, guid: 529aae156e8b25244b613112ec34419d,
+  m_Sprite: {fileID: 2382518083541889405, guid: 529aae156e8b25244b613112ec34419d,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2327,7 +2326,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 39542004646760448, guid: 529aae156e8b25244b613112ec34419d, type: 3}
+  m_Sprite: {fileID: -5222404487460750713, guid: 529aae156e8b25244b613112ec34419d,
+    type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3614,12 +3614,12 @@ PrefabInstance:
     - target: {fileID: 7239301453171120585, guid: 9db1b7a0ae147bd4e9b960c97be7ffce,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7239301453171120585, guid: 9db1b7a0ae147bd4e9b960c97be7ffce,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7239301453171120585, guid: 9db1b7a0ae147bd4e9b960c97be7ffce,
         type: 3}
@@ -3874,12 +3874,12 @@ PrefabInstance:
     - target: {fileID: 7239301453171120585, guid: b3b6dc7f6b7c0614e82aeee83a3b14dc,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7239301453171120585, guid: b3b6dc7f6b7c0614e82aeee83a3b14dc,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7239301453171120585, guid: b3b6dc7f6b7c0614e82aeee83a3b14dc,
         type: 3}

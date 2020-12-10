@@ -4,55 +4,55 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 7557837773599194529
-    second: HudSprites_0
+    second: MineralBagIcon
   - first:
       213: -2153673001348331435
-    second: HudSprites_1
+    second: MineralGaugeFrame
   - first:
       213: 1831783180551199494
-    second: HudSprites_2
+    second: MineralGauge
   - first:
       213: 7553805369860337262
-    second: HudSprites_4
+    second: HolderIcon
   - first:
       213: 6916291845452825592
-    second: HudSprites_4
+    second: HolderIcon
   - first:
       213: 6620071083561962428
-    second: HudSprites_4
+    second: HolderIcon
   - first:
       213: -3831914301232595534
-    second: HudSprites_0
+    second: MineralBagIcon
   - first:
       213: -1043620529916848076
-    second: HudSprites_1
+    second: MineralGaugeFrame
   - first:
       213: 4273748405079104276
-    second: HudSprites_2
+    second: MineralGauge
   - first:
       213: 7324303590992460347
-    second: HudSprites_4
+    second: HolderIcon
   - first:
       213: 8425509913157184271
-    second: HudSprites_4
+    second: HolderIcon
   - first:
       213: 1897583920144666949
-    second: HudSprites_4
+    second: HolderIcon
   - first:
       213: 39542004646760448
-    second: HudSprites_4
+    second: HolderIcon
   - first:
       213: -6483099592437990337
-    second: HudSprites_7
+    second: GainerIcon
   - first:
       213: 5489692609137271038
-    second: HudSprites_8
+    second: IncomeIcon
   - first:
       213: 1693377996202059536
-    second: HudSprites_9
+    second: ExpUpIcon
   - first:
       213: 1556933240774247826
-    second: HudSprites_10
+    second: MoneyUpIcon
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -162,7 +162,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HudSprites_0
+      name: MineralBagIcon
       rect:
         serializedVersion: 2
         x: 229
@@ -183,7 +183,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HudSprites_1
+      name: MineralGaugeFrame
       rect:
         serializedVersion: 2
         x: 324
@@ -204,7 +204,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HudSprites_2
+      name: MineralGauge
       rect:
         serializedVersion: 2
         x: 329
@@ -225,7 +225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HudSprites_6
+      name: MineralGaugeBack
       rect:
         serializedVersion: 2
         x: 329
@@ -246,7 +246,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HudSprites_3
+      name: SprinterIcon
       rect:
         serializedVersion: 2
         x: 48
@@ -267,7 +267,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HudSprites_4
+      name: HolderIcon
       rect:
         serializedVersion: 2
         x: 173
@@ -288,7 +288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HudSprites_5
+      name: MoneyIcon
       rect:
         serializedVersion: 2
         x: 836
@@ -309,7 +309,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HudSprites_7
+      name: GainerIcon
       rect:
         serializedVersion: 2
         x: 293
@@ -330,7 +330,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HudSprites_8
+      name: IncomeIcon
       rect:
         serializedVersion: 2
         x: 414
@@ -351,7 +351,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HudSprites_9
+      name: ExpUpIcon
       rect:
         serializedVersion: 2
         x: 534
@@ -359,7 +359,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -372,7 +372,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HudSprites_10
+      name: MoneyUpIcon
       rect:
         serializedVersion: 2
         x: 650
@@ -380,7 +380,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

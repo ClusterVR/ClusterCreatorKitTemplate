@@ -62,7 +62,6 @@ GameObject:
   - component: {fileID: 165461209296757405}
   - component: {fileID: 4751026255921257924}
   - component: {fileID: 8221898819793887294}
-  - component: {fileID: 5313918467891183463}
   m_Layer: 14
   m_Name: PriceText
   m_TagString: Untagged
@@ -130,26 +129,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: ( 0money )
---- !u!114 &5313918467891183463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302655489709365757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a92f1e574e484214a17734077c9de716, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 8221898819793887294}
-  globalGimmickKey:
-    key:
-      target: 0
-      key: price
-    item: {fileID: 8932720697472830239}
-  parameterType: 3
-  format: "\uFF08{0}money\uFF09"
 --- !u!1 &994582840697565386
 GameObject:
   m_ObjectHideFlags: 0
@@ -6158,6 +6137,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cecafe29203cbf348a1f81a96e940db4, type: 3}
+--- !u!1 &5866012914254774351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2685449203038707247, guid: cecafe29203cbf348a1f81a96e940db4,
+    type: 3}
+  m_PrefabInstance: {fileID: 8371314816483647072}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &101420186474920622 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8450076058914186446, guid: cecafe29203cbf348a1f81a96e940db4,
@@ -6167,12 +6152,6 @@ Animator:
 --- !u!4 &3204130936376234555 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6366891838010510427, guid: cecafe29203cbf348a1f81a96e940db4,
-    type: 3}
-  m_PrefabInstance: {fileID: 8371314816483647072}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5866012914254774351 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2685449203038707247, guid: cecafe29203cbf348a1f81a96e940db4,
     type: 3}
   m_PrefabInstance: {fileID: 8371314816483647072}
   m_PrefabAsset: {fileID: 0}
