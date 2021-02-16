@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9075290293240976236
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 37937972901767549, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: icon10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 161990805734974902, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: icon2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 380982704006915353, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: icon3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 513882803661176265, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: m_Text
+      value: Slot.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 644392165483882930, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: ApplyAbilitySlot.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 924145046921379016, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: icon6.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731060494041273433, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: icon9.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839370942760768176, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: icon1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839370942760768176, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839370942760768177, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: icon1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839370943207967397, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839370943207967397, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839370943207967397, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839370943207967397, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839370943207967397, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839370943207967397, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839370943207967398, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: m_Name
+      value: AbilitySlotUi3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234950848467147329, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: icon2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234950848467147329, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737268389227528817, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: icon5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737268389227528817, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817762781442533438, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: icon8.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2886273332490570079, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: icon4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2886273332490570079, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922820894619397648, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: icon8.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922820894619397648, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720996868578124953, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: icon5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733104896075901160, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: availableAbilitySlotUi.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4031573357616052503, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: icon10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4031573357616052503, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888569846462349835, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: icon7.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888569846462349835, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651868686025366816, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: availableAbilitySlotUi.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651868686025366816, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.integerValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774392482190526275, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: icon9.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774392482190526275, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397187981813742292, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: icon3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397187981813742292, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8012978959083973451, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: icon4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029062931896676168, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: icon6.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029062931896676168, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348509360122499764, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: abilityLevel.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484741167027910122, guid: 8591d939e396aa84dbc03af9830a8a1a,
+        type: 3}
+      propertyPath: globalGimmickKey.key.key
+      value: icon7.3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8591d939e396aa84dbc03af9830a8a1a, type: 3}

@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 1631450603133265244}
   - component: {fileID: 2039904856721609484}
   m_Layer: 14
-  m_Name: None.8
+  m_Name: Champagne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e89123c84e4ad2743b28e9d6ae9fa7dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -968,7 +968,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: None
+  m_Text: Jumper
 --- !u!1 &6516893739732479252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,7 +1183,7 @@ GameObject:
   - component: {fileID: 406014747112860264}
   - component: {fileID: 3349755996632648458}
   m_Layer: 14
-  m_Name: None.7
+  m_Name: Jumper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6add8729d8a7b5340b3b2ae02f3f06c7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1418,4 +1418,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: None
+  m_Text: Champagne

@@ -209,6 +209,35 @@ MonoBehaviour:
       boolValue: 0
       floatValue: 7
       integerValue: 0
+  - target: 2
+    specifiedTargetItem: {fileID: 0}
+    key: SupplyBasicIncome
+    type: 0
+    value:
+      boolValue: 0
+      floatValue: 7
+      integerValue: 0
+--- !u!114 &2191837295349573302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238709764764446002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3aa5b8904e40e3a132d2dee5c14d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggers:
+  - target: 2
+    specifiedTargetItem: {fileID: 0}
+    key: basicIncome
+    type: 2
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 0
 --- !u!1001 &6142161420208019684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -219,7 +248,7 @@ PrefabInstance:
     - target: {fileID: 2129909615016293846, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
       propertyPath: m_Name
-      value: Id4_BasicIncome
+      value: Id4_Income
       objectReference: {fileID: 0}
     - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
@@ -279,7 +308,7 @@ PrefabInstance:
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
       propertyPath: logic.statements.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
@@ -459,7 +488,7 @@ PrefabInstance:
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
       propertyPath: logic.statements.Array.data[2].singleStatement.targetState.key
-      value: UpdateBagCapacity
+      value: basicIncome
       objectReference: {fileID: 0}
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
@@ -469,7 +498,7 @@ PrefabInstance:
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
       propertyPath: logic.statements.Array.data[2].singleStatement.expression.value.constant.boolValue
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
@@ -479,12 +508,12 @@ PrefabInstance:
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
       propertyPath: logic.statements.Array.data[2].singleStatement.expression.value.sourceState.key
-      value: bagExpansionCoef
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
       propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operator
-      value: 4
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
@@ -504,12 +533,12 @@ PrefabInstance:
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
       propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
-      value: bagExpansionCoef
+      value: basicIncome
       objectReference: {fileID: 0}
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
       propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[1].value.type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
@@ -524,7 +553,17 @@ PrefabInstance:
     - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}
       propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.key
-      value: decreaseBagExpansionCoef
+      value: decreaseBasicIncome
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.targetState.parameterType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
         type: 3}

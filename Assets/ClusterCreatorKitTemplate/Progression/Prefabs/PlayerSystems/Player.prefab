@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5780655468085342353}
+  - component: {fileID: 2523111622937437128}
   - component: {fileID: 996049229937166168}
   - component: {fileID: 2674126584267029770}
   m_Layer: 0
@@ -30,8 +31,29 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6187025734561500845}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2523111622937437128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460687570543108418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3aa5b8904e40e3a132d2dee5c14d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggers:
+  - target: 2
+    specifiedTargetItem: {fileID: 0}
+    key: mineralGain
+    type: 2
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 0
 --- !u!114 &996049229937166168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,9 +565,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1022123916069767397}
-  - component: {fileID: 5443668143701674875}
+  - component: {fileID: 5817449799283448619}
   - component: {fileID: 8797554064735273194}
   - component: {fileID: 7859834433985088012}
+  - component: {fileID: 4374041609801998198}
+  - component: {fileID: 3754750671908448340}
+  - component: {fileID: 6301057268128617107}
   m_Layer: 0
   m_Name: Money
   m_TagString: Untagged
@@ -565,9 +590,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6187025734561500845}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5443668143701674875
+--- !u!114 &5817449799283448619
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -576,7 +601,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4856314136068512805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82b6c242e0a44f03b7bb271069f089e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c3aa5b8904e40e3a132d2dee5c14d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggers:
@@ -587,15 +612,15 @@ MonoBehaviour:
     value:
       boolValue: 0
       floatValue: 1
-      integerValue: 1
+      integerValue: 0
   - target: 2
     specifiedTargetItem: {fileID: 0}
     key: money
-    type: 2
+    type: 3
     value:
       boolValue: 0
       floatValue: 0
-      integerValue: 1
+      integerValue: 0
 --- !u!114 &8797554064735273194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,23 +1123,89 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
+--- !u!114 &4374041609801998198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856314136068512805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ec462289974bc7b6a239dbfffa33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    target: 1
+    key: TryVipExchange
+    item: {fileID: 0}
+  logic:
+    statements:
     - singleStatement:
         targetState:
           target: 1
-          key: beforeLevel
-          parameterType: 3
+          key: vip
+          parameterType: 1
         expression:
-          type: 0
+          type: 1
           value:
-            type: 1
+            type: 0
             constant:
-              type: 2
+              type: 1
               boolValue: 0
               floatValue: 0
               integerValue: 0
             sourceState:
               target: 1
-              key: level
+              key: 
+          operatorExpression:
+            operator: 10
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: level
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: vipLevel
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: duplicateCalcMinerals
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: vip
           operatorExpression:
             operator: 3
             operands:
@@ -1134,6 +1225,40 @@ MonoBehaviour:
                 operands: []
             - type: 0
               value:
+                type: 0
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 2
+                sourceState:
+                  target: 1
+                  key: vipLevel
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: minerals
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: vip
+          operatorExpression:
+            operator: 15
+            operands:
+            - type: 0
+              value:
                 type: 1
                 constant:
                   type: 1
@@ -1142,7 +1267,379 @@ MonoBehaviour:
                   integerValue: 0
                 sourceState:
                   target: 1
-                  key: expCoef
+                  key: vip
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: duplicateCalcMinerals
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: minerals
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: VibrateLevel
+          parameterType: 0
+        expression:
+          type: 1
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: vip
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: TryExchange
+          parameterType: 0
+        expression:
+          type: 0
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: vip
+          operatorExpression:
+            operator: 10
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: level
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: vipLevel
+              operatorExpression:
+                operator: 0
+                operands: []
+--- !u!114 &3754750671908448340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856314136068512805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ec462289974bc7b6a239dbfffa33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    target: 1
+    key: PayIfHasEnoughMoney
+    item: {fileID: 0}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 1
+          key: enoughMoney
+          parameterType: 1
+        expression:
+          type: 1
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 10
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: money
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: cost
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: cost
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: money
+          operatorExpression:
+            operator: 15
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: enoughMoney
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: cost
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: openingCost
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: money
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: canOpenGate
+          operatorExpression:
+            operator: 4
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: money
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: cost
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: LackOfMoneyCaution
+          parameterType: 0
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: canOpenGate
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: enoughMoney
+              operatorExpression:
+                operator: 0
+                operands: []
+--- !u!114 &6301057268128617107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856314136068512805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ec462289974bc7b6a239dbfffa33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    target: 1
+    key: Reset
+    item: {fileID: 0}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 1
+          key: money
+          parameterType: 3
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 3
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: 
               operatorExpression:
                 operator: 0
                 operands: []
@@ -1175,11 +1672,13 @@ Transform:
   m_Children:
   - {fileID: 621673289030418222}
   - {fileID: 9100498993347992449}
+  - {fileID: 6511395764996049419}
   - {fileID: 6187025736155956402}
   - {fileID: 5780655468085342353}
   - {fileID: 1022123916069767397}
   - {fileID: 6187025736276757517}
   - {fileID: 6187025735586621886}
+  - {fileID: 5700825490143400189}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1192,11 +1691,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6187025735586621886}
-  - component: {fileID: 6187025735586621835}
+  - component: {fileID: 3148548480470550055}
+  - component: {fileID: 6695467374388895212}
   - component: {fileID: 5163437171463079064}
+  - component: {fileID: 2357556314864038730}
   - component: {fileID: 897372155456847026}
   - component: {fileID: 850272058951466507}
   - component: {fileID: 7511037086081171638}
+  - component: {fileID: 4560687850474703969}
+  - component: {fileID: 1409782668227809951}
   m_Layer: 0
   m_Name: AbilitySlots
   m_TagString: Untagged
@@ -1215,12 +1718,36 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 5751377426747216769}
   - {fileID: 3733997319697371051}
   - {fileID: 3494369910993706026}
+  - {fileID: 5618441059409305755}
+  - {fileID: 4895748427928108293}
   m_Father: {fileID: 6187025734561500845}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6187025735586621835
+--- !u!114 &3148548480470550055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187025735586621887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3aa5b8904e40e3a132d2dee5c14d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggers:
+  - target: 2
+    specifiedTargetItem: {fileID: 0}
+    key: availableSlotsCount
+    type: 3
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 2
+--- !u!114 &6695467374388895212
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1235,12 +1762,28 @@ MonoBehaviour:
   triggers:
   - target: 2
     specifiedTargetItem: {fileID: 0}
-    key: availableSlotsCount
+    key: maxAvailableSlotsCount
     type: 3
     value:
       boolValue: 0
       floatValue: 0
-      integerValue: 2
+      integerValue: 4
+  - target: 2
+    specifiedTargetItem: {fileID: 0}
+    key: OnChangeAbility
+    type: 0
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 0
+  - target: 2
+    specifiedTargetItem: {fileID: 0}
+    key: UpdateNumberOfAbilitySlots
+    type: 0
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 0
 --- !u!114 &5163437171463079064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1255,7 +1798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key:
     target: 1
-    key: ApplyAbilityIfHasEnoughMoneyAndEmptySlot
+    key: TryApplyAbility
     item: {fileID: 0}
   logic:
     statements:
@@ -1344,12 +1887,12 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
-          key: enoughMoney
-          parameterType: 1
+          key: PayIfHasEnoughMoney
+          parameterType: 0
         expression:
-          type: 1
+          type: 0
           value:
-            type: 1
+            type: 0
             constant:
               type: 1
               boolValue: 1
@@ -1389,6 +1932,72 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: ApplyAbilityIfHasEnoughMoneyAndEmptySlot
+          parameterType: 0
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 1
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: money
+          operatorExpression:
+            operator: 10
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 1
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: money
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 1
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: buyingCost
+              operatorExpression:
+                operator: 0
+                operands: []
+--- !u!114 &2357556314864038730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187025735586621887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ec462289974bc7b6a239dbfffa33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    target: 1
+    key: ApplyAbilityIfHasEnoughMoneyAndEmptySlot
+    item: {fileID: 0}
+  logic:
+    statements:
     - singleStatement:
         targetState:
           target: 1
@@ -1523,54 +2132,6 @@ MonoBehaviour:
     item: {fileID: 0}
   logic:
     statements:
-    - singleStatement:
-        targetState:
-          target: 1
-          key: money
-          parameterType: 3
-        expression:
-          type: 1
-          value:
-            type: 0
-            constant:
-              type: 1
-              boolValue: 0
-              floatValue: 0
-              integerValue: 0
-            sourceState:
-              target: 1
-              key: 
-          operatorExpression:
-            operator: 4
-            operands:
-            - type: 0
-              value:
-                type: 1
-                constant:
-                  type: 1
-                  boolValue: 0
-                  floatValue: 0
-                  integerValue: 0
-                sourceState:
-                  target: 1
-                  key: money
-              operatorExpression:
-                operator: 0
-                operands: []
-            - type: 0
-              value:
-                type: 1
-                constant:
-                  type: 3
-                  boolValue: 0
-                  floatValue: 0
-                  integerValue: 0
-                sourceState:
-                  target: 1
-                  key: buyingCost
-              operatorExpression:
-                operator: 0
-                operands: []
     - singleStatement:
         targetState:
           target: 1
@@ -1839,6 +2400,322 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
+--- !u!114 &4560687850474703969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187025735586621887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ec462289974bc7b6a239dbfffa33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    target: 1
+    key: Reset
+    item: {fileID: 0}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 1
+          key: targetSlot
+          parameterType: 3
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 3
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: 
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: availableSlotsCount
+          parameterType: 3
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 3
+              boolValue: 0
+              floatValue: 0
+              integerValue: 2
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: 
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: RemoveAllAbilitySlots
+          parameterType: 0
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 1
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: 
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: UpdateNumberOfAbilitySlots
+          parameterType: 0
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 1
+              floatValue: 0
+              integerValue: 2
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: 
+              operatorExpression:
+                operator: 0
+                operands: []
+--- !u!114 &1409782668227809951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187025735586621887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ec462289974bc7b6a239dbfffa33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    target: 1
+    key: RemoveAllAbilitySlots
+    item: {fileID: 0}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 1
+          key: targetSlot
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 2
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: targetSlot
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 1
+                sourceState:
+                  target: 1
+                  key: 
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: RemoveAbilitySlot
+          parameterType: 0
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 2
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: targetSlot
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 1
+                sourceState:
+                  target: 1
+                  key: 
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: RemoveAllAbilitySlots
+          parameterType: 0
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 11
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: targetSlot
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 1
+                sourceState:
+                  target: 1
+                  key: maxAvailableSlotsCount
+              operatorExpression:
+                operator: 0
+                operands: []
 --- !u!1 &6187025736155956403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,9 +2725,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6187025736155956402}
+  - component: {fileID: 8184138239567502090}
   - component: {fileID: 6187025736155956400}
   - component: {fileID: 6187025736155956401}
   - component: {fileID: 7987611868634335158}
+  - component: {fileID: 5814822862630266000}
   m_Layer: 0
   m_Name: Bag
   m_TagString: Untagged
@@ -1870,8 +2749,29 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6187025734561500845}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8184138239567502090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187025736155956403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3aa5b8904e40e3a132d2dee5c14d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggers:
+  - target: 2
+    specifiedTargetItem: {fileID: 0}
+    key: bagExpansionCoef
+    type: 2
+    value:
+      boolValue: 0
+      floatValue: 1
+      integerValue: 1
 --- !u!114 &6187025736155956400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1887,20 +2787,12 @@ MonoBehaviour:
   triggers:
   - target: 2
     specifiedTargetItem: {fileID: 0}
-    key: bagExpansionCoef
-    type: 3
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 1
-  - target: 2
-    specifiedTargetItem: {fileID: 0}
     key: UpdateBagCapacity
     type: 0
     value:
       boolValue: 0
       floatValue: 0
-      integerValue: 0
+      integerValue: 1
 --- !u!114 &6187025736155956401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2012,6 +2904,54 @@ MonoBehaviour:
                 sourceState:
                   target: 1
                   key: baseBagCapacity
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: capacity
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 0
+            constant:
+              type: 3
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 2
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: capacity
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 50
+                sourceState:
+                  target: 1
+                  key: reincarnationCapacityBuff
               operatorExpression:
                 operator: 0
                 operands: []
@@ -2163,6 +3103,58 @@ MonoBehaviour:
               operatorExpression:
                 operator: 0
                 operands: []
+--- !u!114 &5814822862630266000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187025736155956403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ec462289974bc7b6a239dbfffa33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    target: 1
+    key: Reset
+    item: {fileID: 0}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 1
+          key: minerals
+          parameterType: 3
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 3
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: 
+              operatorExpression:
+                operator: 0
+                operands: []
 --- !u!1 &6187025736276757518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,8 +3184,14 @@ Transform:
   m_Children:
   - {fileID: 391999208008352122}
   - {fileID: 192058594346770359}
+  - {fileID: 6974190765647732074}
+  - {fileID: 781083284570297048}
+  - {fileID: 5594366624427979392}
+  - {fileID: 5716181313840094468}
+  - {fileID: 8017610640638344084}
+  - {fileID: 5841904005548038759}
   m_Father: {fileID: 6187025734561500845}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &42310286700715875
 PrefabInstance:
@@ -2270,6 +3268,306 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 42310286700715875}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &364945537724784573
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025736276757517}
+    m_Modifications:
+    - target: {fileID: 5238709764764446002, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_Name
+      value: Id5_ExpUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e58ea612fcee25e4d87c8242f41e08c0, type: 3}
+--- !u!4 &5594366624427979392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238709764764446013, guid: e58ea612fcee25e4d87c8242f41e08c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 364945537724784573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &446094513738000789
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025734561500845}
+    m_Modifications:
+    - target: {fileID: 2380481262116530784, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_Name
+      value: JumpHeight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 111a68f0e0d65114d987e19e820e5605, type: 3}
+--- !u!4 &6511395764996049419 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6660198689799676830, guid: 111a68f0e0d65114d987e19e820e5605,
+    type: 3}
+  m_PrefabInstance: {fileID: 446094513738000789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &567548493184217145
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025736276757517}
+    m_Modifications:
+    - target: {fileID: 5238709764764446002, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_Name
+      value: Id6_MoneyUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40a5093b150328c459ae3ce479f5e31f, type: 3}
+--- !u!4 &5716181313840094468 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238709764764446013, guid: 40a5093b150328c459ae3ce479f5e31f,
+    type: 3}
+  m_PrefabInstance: {fileID: 567548493184217145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1846826023232534362
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025736276757517}
+    m_Modifications:
+    - target: {fileID: 5238709764764446002, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_Name
+      value: Id8_Champagne
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8931fb742aca69a4eb9ab7cdd2450f53, type: 3}
+--- !u!4 &5841904005548038759 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238709764764446013, guid: 8931fb742aca69a4eb9ab7cdd2450f53,
+    type: 3}
+  m_PrefabInstance: {fileID: 1846826023232534362}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2460848816984078367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2344,6 +3642,456 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6660198689799676830, guid: aeaa5827835e84690805b8e8202147b2,
     type: 3}
   m_PrefabInstance: {fileID: 2460848816984078367}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2729473841159822092
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025735586621886}
+    m_Modifications:
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487694, guid: f6d7ff0209311db4b8373022c1ae7737,
+        type: 3}
+      propertyPath: m_Name
+      value: Slot4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6d7ff0209311db4b8373022c1ae7737, type: 3}
+--- !u!4 &4895748427928108293 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7354440583988487689, guid: f6d7ff0209311db4b8373022c1ae7737,
+    type: 3}
+  m_PrefabInstance: {fileID: 2729473841159822092}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2880021864527451817
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025736276757517}
+    m_Modifications:
+    - target: {fileID: 5238709764764446002, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_Name
+      value: Id7_Jumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8bef3fd059ccac145a5d629ef09a704e, type: 3}
+--- !u!4 &8017610640638344084 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238709764764446013, guid: 8bef3fd059ccac145a5d629ef09a704e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2880021864527451817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2916906812401365079
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025736276757517}
+    m_Modifications:
+    - target: {fileID: 5238709764764446002, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_Name
+      value: Id3_Gainer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d052396e22bbaf149b8f8490ac3a2e58, type: 3}
+--- !u!4 &6974190765647732074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238709764764446013, guid: d052396e22bbaf149b8f8490ac3a2e58,
+    type: 3}
+  m_PrefabInstance: {fileID: 2916906812401365079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3076298596293289281
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025734561500845}
+    m_Modifications:
+    - target: {fileID: 6554224144313825339, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_Name
+      value: Reincarnation
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 46c3b9b4f5328c8488cb9500e9b64f5c, type: 3}
+--- !u!4 &5700825490143400189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7326322855323727292, guid: 46c3b9b4f5328c8488cb9500e9b64f5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3076298596293289281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3163935825915676306
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025735586621886}
+    m_Modifications:
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354440583988487694, guid: a7eb66137c1dadb44aa464f658187ebb,
+        type: 3}
+      propertyPath: m_Name
+      value: Slot3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a7eb66137c1dadb44aa464f658187ebb, type: 3}
+--- !u!4 &5618441059409305755 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7354440583988487689, guid: a7eb66137c1dadb44aa464f658187ebb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3163935825915676306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4784324589359038437
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025736276757517}
+    m_Modifications:
+    - target: {fileID: 5238709764764446002, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_Name
+      value: Id4_Income
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f3794c28bfd5864bac90ee265dc0be2, type: 3}
+--- !u!4 &781083284570297048 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5238709764764446013, guid: 6f3794c28bfd5864bac90ee265dc0be2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4784324589359038437}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5339569864287597194
 PrefabInstance:
@@ -2540,7 +4288,7 @@ PrefabInstance:
     - target: {fileID: 7354440583988487689, guid: 9edb59e9f23f47749a858afd0543f0d9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7354440583988487689, guid: 9edb59e9f23f47749a858afd0543f0d9,
         type: 3}
@@ -2615,7 +4363,7 @@ PrefabInstance:
     - target: {fileID: 7354440583988487689, guid: 36c394de3f95e704abe9e0a0073d5ebe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7354440583988487689, guid: 36c394de3f95e704abe9e0a0073d5ebe,
         type: 3}
@@ -2644,4 +4392,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7354440583988487689, guid: 36c394de3f95e704abe9e0a0073d5ebe,
     type: 3}
   m_PrefabInstance: {fileID: 6227992667344501283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6741732709971657348
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6187025735586621886}
+    m_Modifications:
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4032192206305701143, guid: 750daaa8602179447a1bf51a39b28fc8,
+        type: 3}
+      propertyPath: m_Name
+      value: AbilitySlotParts
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 750daaa8602179447a1bf51a39b28fc8, type: 3}
+--- !u!4 &5751377426747216769 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1323932268020486405, guid: 750daaa8602179447a1bf51a39b28fc8,
+    type: 3}
+  m_PrefabInstance: {fileID: 6741732709971657348}
   m_PrefabAsset: {fileID: 0}

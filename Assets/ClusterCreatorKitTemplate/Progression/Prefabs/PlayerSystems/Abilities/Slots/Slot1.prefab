@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2900619574826778387, guid: 56a4ec617d01ce646925d3eb3f5f4384,
         type: 3}
       propertyPath: m_Name
-      value: AbilitySlotBase Variant
+      value: Slot1
       objectReference: {fileID: 0}
     - target: {fileID: 2900619574826778388, guid: 56a4ec617d01ce646925d3eb3f5f4384,
         type: 3}
@@ -150,6 +150,16 @@ PrefabInstance:
     - target: {fileID: 2900619574826778396, guid: 56a4ec617d01ce646925d3eb3f5f4384,
         type: 3}
       propertyPath: logic.statements.Array.data[1].singleStatement.targetState.key
+      value: abilityLevel.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144117072823799057, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: triggers.Array.data[0].key
+      value: abilityId.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144117072823799057, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: triggers.Array.data[1].key
       value: abilityLevel.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

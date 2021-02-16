@@ -53,6 +53,9 @@ TextureImporter:
   - first:
       213: 1556933240774247826
     second: MoneyUpIcon
+  - first:
+      213: -3831914301232595534
+    second: MineralBagIcon
   externalObjects: {}
   serializedVersion: 11
   mipmaps:

@@ -18,7 +18,7 @@
 - iOS Build Support
 - Windows Build Support (Mono)
 
-### Cluster Creator Kit v1.10.0 以上
+### Cluster Creator Kit v1.12.0 以上
 プロジェクトに自動で導入されます。
 起動時にエラーが出る場合や Unity のメニューに「Cluster」の項目が追加されていない場合は [Creator Kitの導入](https://clustervr.gitbook.io/creatorkit/installation/install-creatorkit) を参考に Creator Kit の手動での導入をお試しください。
 

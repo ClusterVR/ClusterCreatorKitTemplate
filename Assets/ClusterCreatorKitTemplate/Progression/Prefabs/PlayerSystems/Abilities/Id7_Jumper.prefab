@@ -1,0 +1,628 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4894138005361723521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238709764764446002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b6c242e0a44f03b7bb271069f089e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggers:
+  - target: 4
+    specifiedTargetItem: {fileID: 0}
+    key: abilityEfficacy.7
+    type: 2
+    value:
+      boolValue: 0
+      floatValue: 1
+      integerValue: 0
+--- !u!1001 &6142161420208019684
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2129909615016293846, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_Name
+      value: Id7_Jumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293849, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: key.key
+      value: RemoveAbilityId.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: decreaseJumpHeight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.parameterType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operator
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: removedAbilityLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.target
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.key
+      value: abilityEfficacy.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.targetState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.targetState.key
+      value: jumpHeight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.targetState.parameterType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operator
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[0].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[0].value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: jumpHeight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[1].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.key
+      value: decreaseJumpHeight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.targetState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.targetState.key
+      value: UpdateBagCapacity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.value.constant.boolValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.value.sourceState.key
+      value: bagExpansionCoef
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operator
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[0].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[0].value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: bagExpansionCoef
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[1].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.key
+      value: decreaseBagExpansionCoef
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293850, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: key.key
+      value: ApplyAbilityId.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: increaseJumpHeight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.parameterType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operator
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: applyingAbilityLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.target
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.key
+      value: abilityEfficacy.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.targetState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.targetState.key
+      value: jumpHeight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.targetState.parameterType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operator
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[0].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[0].value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: jumpHeight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[1].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.floatValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.key
+      value: increaseJumpHeight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.targetState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.targetState.key
+      value: UpdateBagCapacity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.value.constant.boolValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.value.sourceState.key
+      value: applyingAbilityLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operator
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[0].value.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[0].value.constant.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[0].value.sourceState.key
+      value: applyingAbilityLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.floatValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[2].singleStatement.expression.operatorExpression.operands.Array.data[1].value.sourceState.target
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293851, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[1].singleStatement.expression.value.type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293852, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: ApplyAbilityId.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293852, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.integerValue
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293853, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.targetState.key
+      value: RemoveAbilityId.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129909615016293853, guid: 138c835c684c1e24481405416fa10b40,
+        type: 3}
+      propertyPath: logic.statements.Array.data[0].singleStatement.expression.operatorExpression.operands.Array.data[1].value.constant.integerValue
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 138c835c684c1e24481405416fa10b40, type: 3}
+--- !u!1 &5238709764764446002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2129909615016293846, guid: 138c835c684c1e24481405416fa10b40,
+    type: 3}
+  m_PrefabInstance: {fileID: 6142161420208019684}
+  m_PrefabAsset: {fileID: 0}

@@ -152,5 +152,15 @@ PrefabInstance:
       propertyPath: logic.statements.Array.data[1].singleStatement.targetState.key
       value: abilityLevel.3
       objectReference: {fileID: 0}
+    - target: {fileID: 8144117072823799057, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: triggers.Array.data[0].key
+      value: abilityId.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144117072823799057, guid: 56a4ec617d01ce646925d3eb3f5f4384,
+        type: 3}
+      propertyPath: triggers.Array.data[1].key
+      value: abilityLevel.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56a4ec617d01ce646925d3eb3f5f4384, type: 3}

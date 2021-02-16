@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6660198689799676830}
-  - component: {fileID: 7847291742665424292}
+  - component: {fileID: 461358170812487543}
   - component: {fileID: 1972531361439340549}
   m_Layer: 0
   m_Name: MoveSpeed
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7847291742665424292
+--- !u!114 &461358170812487543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,7 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2380481262116530784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82b6c242e0a44f03b7bb271069f089e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c3aa5b8904e40e3a132d2dee5c14d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggers:

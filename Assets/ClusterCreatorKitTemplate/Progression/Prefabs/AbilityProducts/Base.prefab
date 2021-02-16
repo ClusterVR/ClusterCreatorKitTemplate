@@ -5414,7 +5414,7 @@ MonoBehaviour:
   globalGimmickKey:
     key:
       target: 0
-      key: Buy
+      key: SucceededBuy
     item: {fileID: 8932720697472830239}
   parameterType: 0
   animatorParameterName: Press
@@ -5751,7 +5751,7 @@ MonoBehaviour:
       integerValue: 0
   - target: 2
     specifiedTargetItem: {fileID: 0}
-    key: buyingCost
+    key: cost
     type: 3
     value:
       boolValue: 0
@@ -5759,7 +5759,7 @@ MonoBehaviour:
       integerValue: 0
   - target: 2
     specifiedTargetItem: {fileID: 0}
-    key: ApplyAbilityIfHasEnoughMoneyAndEmptySlot
+    key: TryApplyAbility
     type: 0
     value:
       boolValue: 0
