@@ -2083,7 +2083,7 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
-          key: CautionIfFilledAbility
+          key: OnAppliedAbility
           parameterType: 0
         expression:
           type: 0
@@ -2169,40 +2169,6 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
-          key: OnApplyAbility
-          parameterType: 0
-        expression:
-          type: 0
-          value:
-            type: 0
-            constant:
-              type: 1
-              boolValue: 1
-              floatValue: 0
-              integerValue: 0
-            sourceState:
-              target: 1
-              key: 
-          operatorExpression:
-            operator: 0
-            operands:
-            - type: 0
-              value:
-                type: 0
-                constant:
-                  type: 1
-                  boolValue: 0
-                  floatValue: 0
-                  integerValue: 0
-                sourceState:
-                  target: 1
-                  key: 
-              operatorExpression:
-                operator: 0
-                operands: []
-    - singleStatement:
-        targetState:
-          target: 1
           key: OnChangeAbility
           parameterType: 0
         expression:
@@ -2248,7 +2214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key:
     target: 1
-    key: CautionIfFilledAbility
+    key: OnAppliedAbility
     item: {fileID: 0}
   logic:
     statements:
@@ -2289,8 +2255,8 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
-          key: CautionFilledAbility
-          parameterType: 0
+          key: filledAbility
+          parameterType: 1
         expression:
           type: 1
           value:
@@ -2331,6 +2297,164 @@ MonoBehaviour:
                 sourceState:
                   target: 1
                   key: applyFailed
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: CautionFilledAbility
+          parameterType: 0
+        expression:
+          type: 0
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: filledAbility
+          operatorExpression:
+            operator: 13
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: enoughMoney
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: applyFailed
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: refund
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: filledAbility
+          operatorExpression:
+            operator: 15
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: filledAbility
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: cost
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: applyFailed
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: money
+          parameterType: 3
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: filledAbility
+          operatorExpression:
+            operator: 2
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: money
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: refund
               operatorExpression:
                 operator: 0
                 operands: []
