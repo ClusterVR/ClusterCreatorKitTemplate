@@ -570,6 +570,8 @@ GameObject:
   - component: {fileID: 7859834433985088012}
   - component: {fileID: 4374041609801998198}
   - component: {fileID: 3754750671908448340}
+  - component: {fileID: 3227294644292895221}
+  - component: {fileID: 8887250509038802188}
   - component: {fileID: 6301057268128617107}
   m_Layer: 0
   m_Name: Money
@@ -1402,6 +1404,134 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
+          key: CheckHasEnoughMoney
+          parameterType: 0
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 1
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: money
+          operatorExpression:
+            operator: 10
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: money
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: cost
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
+          key: PayMoney
+          parameterType: 0
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 1
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: enoughMoney
+          operatorExpression:
+            operator: 15
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: enoughMoney
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: cost
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 3
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: openingCost
+              operatorExpression:
+                operator: 0
+                operands: []
+--- !u!114 &3227294644292895221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856314136068512805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ec462289974bc7b6a239dbfffa33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    target: 1
+    key: CheckHasEnoughMoney
+    item: {fileID: 0}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 1
           key: enoughMoney
           parameterType: 1
         expression:
@@ -1450,6 +1580,58 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
+          key: LackOfMoneyCaution
+          parameterType: 0
+        expression:
+          type: 1
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: enoughMoney
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: enoughMoney
+              operatorExpression:
+                operator: 0
+                operands: []
+--- !u!114 &8887250509038802188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856314136068512805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ec462289974bc7b6a239dbfffa33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    target: 1
+    key: PayMoney
+    item: {fileID: 0}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 1
           key: cost
           parameterType: 3
         expression:
@@ -1463,7 +1645,7 @@ MonoBehaviour:
               integerValue: 0
             sourceState:
               target: 1
-              key: money
+              key: canOpenGate
           operatorExpression:
             operator: 15
             operands:
@@ -1500,12 +1682,12 @@ MonoBehaviour:
                 type: 0
                 constant:
                   type: 3
-                  boolValue: 0
+                  boolValue: 1
                   floatValue: 0
                   integerValue: 0
                 sourceState:
                   target: 1
-                  key: openingCost
+                  key: cost
               operatorExpression:
                 operator: 0
                 operands: []
@@ -1554,40 +1736,6 @@ MonoBehaviour:
                 sourceState:
                   target: 1
                   key: cost
-              operatorExpression:
-                operator: 0
-                operands: []
-    - singleStatement:
-        targetState:
-          target: 1
-          key: LackOfMoneyCaution
-          parameterType: 0
-        expression:
-          type: 1
-          value:
-            type: 1
-            constant:
-              type: 1
-              boolValue: 0
-              floatValue: 0
-              integerValue: 0
-            sourceState:
-              target: 1
-              key: canOpenGate
-          operatorExpression:
-            operator: 0
-            operands:
-            - type: 0
-              value:
-                type: 1
-                constant:
-                  type: 1
-                  boolValue: 0
-                  floatValue: 0
-                  integerValue: 0
-                sourceState:
-                  target: 1
-                  key: enoughMoney
               operatorExpression:
                 operator: 0
                 operands: []
@@ -1887,7 +2035,7 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
-          key: PayIfHasEnoughMoney
+          key: CheckHasEnoughMoney
           parameterType: 0
         expression:
           type: 0
@@ -2001,40 +2149,6 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
-          key: LackOfMoneyCaution
-          parameterType: 0
-        expression:
-          type: 1
-          value:
-            type: 1
-            constant:
-              type: 1
-              boolValue: 1
-              floatValue: 0
-              integerValue: 0
-            sourceState:
-              target: 1
-              key: enoughMoney
-          operatorExpression:
-            operator: 0
-            operands:
-            - type: 0
-              value:
-                type: 1
-                constant:
-                  type: 1
-                  boolValue: 1
-                  floatValue: 0
-                  integerValue: 0
-                sourceState:
-                  target: 1
-                  key: enoughMoney
-              operatorExpression:
-                operator: 0
-                operands: []
-    - singleStatement:
-        targetState:
-          target: 1
           key: ApplyAbilityIfHasEmptySlot
           parameterType: 0
         expression:
@@ -2083,7 +2197,7 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
-          key: OnAppliedAbility
+          key: PayIfAppliedAbility
           parameterType: 0
         expression:
           type: 0
@@ -2169,6 +2283,40 @@ MonoBehaviour:
     - singleStatement:
         targetState:
           target: 1
+          key: OnApplyAbility
+          parameterType: 0
+        expression:
+          type: 0
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 1
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: 
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 0
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: 
+              operatorExpression:
+                operator: 0
+                operands: []
+    - singleStatement:
+        targetState:
+          target: 1
           key: OnChangeAbility
           parameterType: 0
         expression:
@@ -2214,10 +2362,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key:
     target: 1
-    key: OnAppliedAbility
+    key: PayIfAppliedAbility
     item: {fileID: 0}
   logic:
     statements:
+    - singleStatement:
+        targetState:
+          target: 1
+          key: PayMoney
+          parameterType: 0
+        expression:
+          type: 0
+          value:
+            type: 1
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+            sourceState:
+              target: 1
+              key: successfullyApplied
+          operatorExpression:
+            operator: 13
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: filledAbility
+              operatorExpression:
+                operator: 0
+                operands: []
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                sourceState:
+                  target: 1
+                  key: refund
+              operatorExpression:
+                operator: 0
+                operands: []
     - singleStatement:
         targetState:
           target: 1
@@ -2345,116 +2541,6 @@ MonoBehaviour:
                 sourceState:
                   target: 1
                   key: applyFailed
-              operatorExpression:
-                operator: 0
-                operands: []
-    - singleStatement:
-        targetState:
-          target: 1
-          key: refund
-          parameterType: 3
-        expression:
-          type: 1
-          value:
-            type: 1
-            constant:
-              type: 1
-              boolValue: 0
-              floatValue: 0
-              integerValue: 0
-            sourceState:
-              target: 1
-              key: filledAbility
-          operatorExpression:
-            operator: 15
-            operands:
-            - type: 0
-              value:
-                type: 1
-                constant:
-                  type: 1
-                  boolValue: 0
-                  floatValue: 0
-                  integerValue: 0
-                sourceState:
-                  target: 1
-                  key: filledAbility
-              operatorExpression:
-                operator: 0
-                operands: []
-            - type: 0
-              value:
-                type: 1
-                constant:
-                  type: 1
-                  boolValue: 0
-                  floatValue: 0
-                  integerValue: 0
-                sourceState:
-                  target: 1
-                  key: cost
-              operatorExpression:
-                operator: 0
-                operands: []
-            - type: 0
-              value:
-                type: 0
-                constant:
-                  type: 3
-                  boolValue: 0
-                  floatValue: 0
-                  integerValue: 0
-                sourceState:
-                  target: 1
-                  key: applyFailed
-              operatorExpression:
-                operator: 0
-                operands: []
-    - singleStatement:
-        targetState:
-          target: 1
-          key: money
-          parameterType: 3
-        expression:
-          type: 1
-          value:
-            type: 1
-            constant:
-              type: 1
-              boolValue: 0
-              floatValue: 0
-              integerValue: 0
-            sourceState:
-              target: 1
-              key: filledAbility
-          operatorExpression:
-            operator: 2
-            operands:
-            - type: 0
-              value:
-                type: 1
-                constant:
-                  type: 1
-                  boolValue: 0
-                  floatValue: 0
-                  integerValue: 0
-                sourceState:
-                  target: 1
-                  key: money
-              operatorExpression:
-                operator: 0
-                operands: []
-            - type: 0
-              value:
-                type: 1
-                constant:
-                  type: 1
-                  boolValue: 0
-                  floatValue: 0
-                  integerValue: 0
-                sourceState:
-                  target: 1
-                  key: refund
               operatorExpression:
                 operator: 0
                 operands: []
