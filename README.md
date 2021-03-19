@@ -36,6 +36,11 @@
 「鉱石を集めてレベルを上げて、貯まったお金で強いアビリティを買って、もっと鉱石を集める」ゲームのテンプレートです。
 プレイヤーの経験値とレベル、鉱石の所持個数、プレイヤーアビリティの効果と購入・付け外しなどを実装しています。
 
+### アスレチック
+`Assets/ClusterCreatorKitTemplate/Playground/Scenes/Playground.unity`
+
+さまざまなアトラクションを作るのに便利な仕掛けがたくさん詰め込まれたテンプレートです。
+
 ## ライセンス
 
 本プロジェクトは [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) で提供されています。
