@@ -41,6 +41,11 @@
 
 さまざまなアトラクションを作るのに便利な仕掛けがたくさん詰め込まれたテンプレートです。
 
+### 乗り物
+`Assets/ClusterCreatorKitTemplate/Vehicle/Scenes/Vehicle.unity`
+
+カートに乗って運転できるワールドのテンプレートです。ロードコーンと観戦席もあります。
+
 ## ライセンス
 
 本プロジェクトは [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) で提供されています。
