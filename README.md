@@ -44,10 +44,10 @@
 ### 乗り物
 `Assets/ClusterCreatorKitTemplate/Vehicle/Scenes/Vehicle.unity`
 
-カートに乗って運転できるワールドのテンプレートです。ロードコーンと観戦席もあります。
+ベーシックな乗り物のテンプレートです。
+ゴーカート、ヘリコプター、ポニーの3種類があります。観戦席にも座れます。
 
 ## ライセンス
 
 本プロジェクトは [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) で提供されています。
 本プロジェクトの全部もしくは一部を使用して作成されたコンテンツを [cluster](https://cluster.mu/) で公開する場合は Cluster, Inc. のクレジット表示は不要です。
-
