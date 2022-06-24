@@ -24,11 +24,15 @@
 
 ## テンプレートの一覧
 
-### シューター
-`Assets/ClusterCreatorKitTemplate/Shooter/Scenes/Shooter.unity`
+### ミュージック
+`Assets/ClusterCreatorKitTemplate/Music/Scenes/Music.unity`
 
-銃で的を撃って破壊できるテンプレートです。
-銃にはハンドガン、マシンガン、チャージガンの3種類があります。
+音楽に合わせて動く様々なエフェクトが詰まったテンプレートです。
+
+### アスレチック
+`Assets/ClusterCreatorKitTemplate/Playground/Scenes/Playground.unity`
+
+さまざまなアトラクションを作るのに便利な仕掛けがたくさん詰め込まれたテンプレートです。
 
 ### プログレッション
 `Assets/ClusterCreatorKitTemplate/Progression/Scenes/Progression.unity`
@@ -36,16 +40,23 @@
 「鉱石を集めてレベルを上げて、貯まったお金で強いアビリティを買って、もっと鉱石を集める」ゲームのテンプレートです。
 プレイヤーの経験値とレベル、鉱石の所持個数、プレイヤーアビリティの効果と購入・付け外しなどを実装しています。
 
-### アスレチック
-`Assets/ClusterCreatorKitTemplate/Playground/Scenes/Playground.unity`
+### シューター
+`Assets/ClusterCreatorKitTemplate/Shooter/Scenes/Shooter.unity`
 
-さまざまなアトラクションを作るのに便利な仕掛けがたくさん詰め込まれたテンプレートです。
+銃で的を撃って破壊できるテンプレートです。
+銃にはハンドガン、マシンガン、チャージガンの3種類があります。
 
 ### 乗り物
 `Assets/ClusterCreatorKitTemplate/Vehicle/Scenes/Vehicle.unity`
 
 ベーシックな乗り物のテンプレートです。
 ゴーカート、ヘリコプター、ポニーの3種類があります。観戦席にも座れます。
+
+### Minimal Sample
+`Assets/ClusterCreatorKitTemplate/Minimal/Scenes/MinimalSample.unity`
+
+ワールドの必須コンポーネントだけを設置したシンプルなシーンです。
+Cluster Creator KitサンプルプロジェクトのMinimal Sampleと同じものです。
 
 ## ライセンス
 
