@@ -163,7 +163,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d9ce640092271cf40bf679705b2c2b28, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5ae1ffa4079740adbc2a09d4188d1f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -197,7 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8187736243455501271}
   m_Layer: 0
-  m_Name: worldgate
+  m_Name: WorldGateToClusterLobby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e2bee252abf41829451dd430b50cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldOrEventId: 7d52c6b6-0caf-4b7f-a0d1-c0b85ffd414c
+  worldOrEventId: ac642699-be79-4fc5-abee-ae1c51c5ec7a
   key: 
 --- !u!136 &2377318945079345345
 CapsuleCollider:

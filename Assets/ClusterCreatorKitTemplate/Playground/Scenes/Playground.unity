@@ -15722,7 +15722,7 @@ PrefabInstance:
     - target: {fileID: 8187736243455501272, guid: bcb4321352c07a94480b4dd0ff0fadee,
         type: 3}
       propertyPath: m_Name
-      value: WorldGateToGameWorldCenter
+      value: WorldGateToClusterLobby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcb4321352c07a94480b4dd0ff0fadee, type: 3}
