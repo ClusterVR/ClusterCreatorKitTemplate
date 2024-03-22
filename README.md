@@ -52,7 +52,7 @@
 ベーシックな乗り物のテンプレートです。
 ゴーカート、ヘリコプター、ポニーの3種類があります。観戦席にも座れます。
 
-### 釣り
+### フィッシング
 `Assets/ClusterCreatorKitTemplate/Fishing/Scenes/Fishing.unity`
 
 ランダムに釣れる魚を集め、図鑑を埋めていく釣りゲームです。

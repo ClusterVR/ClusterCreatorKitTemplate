@@ -2933,7 +2933,7 @@ PrefabInstance:
     - target: {fileID: 141906385340369858, guid: 0cf089b30925b5444ae930a507ce7a50,
         type: 3}
       propertyPath: m_Text
-      value: "\u5B87\u5B99\u306E\u795E\u79D8\u3092\u611F\u3058\u3055\u305B\u308B\u8272\u5408\u3044\u306E\u9B5A\u3002\u3069\u3053\u304B\u3089\u3068\u3082\u306A\u304F\u73FE\u308C\u3001\u3044\u3064\u306E\u9593\u306B\u304B\u6D88\u3048\u3066\u3044\u308B"
+      value: "\u5B87\u5B99\u306E\u795E\u79D8\u3092\u611F\u3058\u3055\u305B\u308B\u8272\u5408\u3044\u306E\u9B5A\u3002\u3069\u3053\u304B\u3089\u3068\u3082\u306A\u304F\u73FE\u308C\u3001\u3044\u3064\u306E\u9593\u306B\u304B\u6D88\u3048\u3066\u3044\u308B\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 554106033368330932, guid: 0cf089b30925b5444ae930a507ce7a50,
         type: 3}
@@ -3848,7 +3848,7 @@ PrefabInstance:
     - target: {fileID: 141906385340369858, guid: 0cf089b30925b5444ae930a507ce7a50,
         type: 3}
       propertyPath: m_Text
-      value: "\u91CD\u597D\u611F\u306E\u3042\u308B\u9ED2\u3055\u304C\u76EE\u306B\u7559\u307E\u308B\u3002\u98DF\u7528\u3084\u91E3\u308A\u306E\u5BFE\u8C61\u3068\u3057\u3066\u4EBA\u6C17\u304C\u3042\u308B\u9B5A\u3002"
+      value: "\u91CD\u539A\u611F\u306E\u3042\u308B\u9ED2\u3055\u304C\u76EE\u306B\u7559\u307E\u308B\u3002\u98DF\u7528\u3084\u91E3\u308A\u306E\u5BFE\u8C61\u3068\u3057\u3066\u4EBA\u6C17\u304C\u3042\u308B\u9B5A\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 554106033368330932, guid: 0cf089b30925b5444ae930a507ce7a50,
         type: 3}
@@ -5207,7 +5207,7 @@ PrefabInstance:
     - target: {fileID: 141906385340369858, guid: 0cf089b30925b5444ae930a507ce7a50,
         type: 3}
       propertyPath: m_Text
-      value: "\u9BAE\u3084\u304B\u306A\u7D05\u8272\u304C\u7279\u5FB4\u3001\u98DF\u7528\u3084\u91E3\u308A\u306E\u5BFE\u8C61\u3068\u3057\u3066\u4EBA\u6C17\u304C\u3042\u308B\u9B5A\u3002"
+      value: "\u9BAE\u3084\u304B\u306A\u7D05\u8272\u304C\u7279\u5FB4\u3002\u98DF\u7528\u3084\u91E3\u308A\u306E\u5BFE\u8C61\u3068\u3057\u3066\u4EBA\u6C17\u304C\u3042\u308B\u9B5A\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 554106033368330932, guid: 0cf089b30925b5444ae930a507ce7a50,
         type: 3}
@@ -6388,7 +6388,7 @@ PrefabInstance:
     - target: {fileID: 141906385340369858, guid: 0cf089b30925b5444ae930a507ce7a50,
         type: 3}
       propertyPath: m_Text
-      value: "\u6A2A\u5411\u304D\u306E\u7E1E\u6A21\u69D8\u304C\u7279\u5FB4\u306E\u9B5A\u3002\u90AA\u306A\u8A33\u3067\u306F\u7121\u3044"
+      value: "\u6A2A\u5411\u304D\u306E\u7E1E\u6A21\u69D8\u304C\u7279\u5FB4\u306E\u9B5A\u3002\u90AA\u306A\u8A33\u3067\u306F\u7121\u3044\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 554106033368330932, guid: 0cf089b30925b5444ae930a507ce7a50,
         type: 3}
