@@ -64,6 +64,23 @@
 ワールドの必須コンポーネントだけを設置したシンプルなシーンです。
 Cluster Creator KitサンプルプロジェクトのMinimal Sampleと同じものです。
 
+## ミニテンプレート
+既存のワールドに組み込むことを目的とした、パーツ単位のテンプレートです。
+
+### カプセルトイ
+`Assets/ClusterCreatorKitTemplate/GameCenter/Prefabs/CT_CapsuleBasket.prefab`
+`Assets/ClusterCreatorKitTemplate/GameCenter/Prefabs/CT_Machine.prefab`
+`Assets/ClusterCreatorKitTemplate/GameCenter/Prefabs/CT_Machine_Lite.prefab`
+`Assets/ClusterCreatorKitTemplate/GameCenter/Prefabs/CT_MachineRetro.prefab`
+`Assets/ClusterCreatorKitTemplate/GameCenter/Prefabs/CT_MachineRetro_Lite.prefab`
+`Assets/ClusterCreatorKitTemplate/GameCenter/Prefabs/CT_Machines_2x4.prefab`
+`Assets/ClusterCreatorKitTemplate/GameCenter/Prefabs/CT_Machines_Stand.prefab`
+`Assets/ClusterCreatorKitTemplate/GameCenter/Prefabs/CT_ResetButton.prefab`
+`Assets/ClusterCreatorKitTemplate/GameCenter/Prefabs/CT_Stand.prefab`
+
+使用すると景品の入ったカプセルを排出するギミックです。
+そのまま置くだけでなく、手軽にカプセルの中身を入れ替えることもできます。
+
 ## ライセンス
 
 本プロジェクトは [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) で提供されています。
